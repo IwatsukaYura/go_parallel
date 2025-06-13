@@ -16,16 +16,16 @@ func getLuckyNum(c chan<- int){
 	c <- num
 }
 
-func main(){
-	fmt.Println("what is today's lucky number?")
+// func main(){
+// 	fmt.Println("what is today's lucky number?")
 
-	c := make(chan int)
-	go getLuckyNum(c)
+// 	c := make(chan int)
+// 	go getLuckyNum(c)
 
-	num := <-c
+// 	num := <-c
 
-	fmt.Printf("Today's lucky number is %d\n", num)
+// 	fmt.Printf("Today's lucky number is %d\n", num)
 
 
-	close(c)
-}
+// 	close(c)
+// }
